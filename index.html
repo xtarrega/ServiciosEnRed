@@ -1,0 +1,22 @@
+---
+layout: default
+title: Apuntes Puesta en producción segura.
+---
+<h1>Puesta en Producción Segura</h1>        
+
+</ol>
+    <h2>Tema 1 - Introducción</h2>
+    <blockquote>
+      En esta parte del módulo crearemos el entorno necesario que usaremos durante el resto del curso, 
+      así como aprenderemos los conceptos básicos que nos servirán para empezar a familiarizarnos con el término
+       <strong>Puesta en Producción (Segura)</strong>
+    </blockquote>
+
+<ol class='portada'> 
+  {% for post in site.posts reversed %}
+    {% if post.categories contains "tema1" %}
+      <li><h4><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h4></li>
+    {% endif %}
+{% endfor %}
+</ol>
+
